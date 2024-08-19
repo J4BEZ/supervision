@@ -1,5 +1,4 @@
 from contextlib import ExitStack as DoesNotRaise
-from test.test_utils import mock_detections
 from typing import List, Optional
 
 import defusedxml.ElementTree as ET
@@ -11,6 +10,7 @@ from supervision.dataset.formats.pascal_voc import (
     object_to_pascal_voc,
     parse_polygon_points,
 )
+from test.test_utils import mock_detections
 
 
 def are_xml_elements_equal(elem1, elem2):
