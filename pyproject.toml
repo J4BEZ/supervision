@@ -61,6 +61,9 @@ pillow = ">=9.4"
 desktop = ["opencv-python"]
 assets = ["requests", "tqdm"]
 
+[tool.poetry.group.typecheck]
+optional = true
+
 [tool.poetry.group.dev.dependencies]
 twine = "^5.1.1"
 pytest = ">=7.2.2,<9.0.0"
@@ -89,6 +92,11 @@ mike = "^2.0.0"
 mkdocs-jupyter = "^0.24.3"
 mkdocs-git-committers-plugin-2 = "^2.2.3"
 mkdocs-git-revision-date-localized-plugin = "^1.2.4"
+
+[tool.poetry.group.typecheck.dependencies]
+types-pyyaml = "^6.0.12.20240808"
+types-requests = "^2.32.0.20240712"
+types-tqdm = "^4.66.0.20240417"
 
 [tool.isort]
 line_length = 88
